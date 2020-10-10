@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,7 +35,7 @@ namespace Problem1
             ///from Func group.
             /////////////////////////////////////////////////////////////////////////
             //WRITE YOUR CODE BELOW
-            
+            Func<string, string> aDel;
 
 
             /////////////////////////////////////////////////////////////////////////
@@ -43,7 +43,7 @@ namespace Problem1
             ///from Func group.
             /////////////////////////////////////////////////////////////////////////
             //WRITE YOUR CODE BELOW
-
+            Func<string, int> bDel;
 
 
             //////////////////////////////
@@ -72,7 +72,7 @@ namespace Problem1
                         //Save the returned value from the call in variable sUpper.
                         //////////////////////////////////////////////////////////////
                         //WRITE YOUR CODE BELOW
-
+                        sUpper = aDel(s);
 
 
 
@@ -95,7 +95,7 @@ namespace Problem1
                         //Save the returned value from the call in variable sLength. 
                         //////////////////////////////////////////////////////////////
                         //WRITE YOUR CODE BELOW
-
+                        sLength = bDel(s);
 
 
 
