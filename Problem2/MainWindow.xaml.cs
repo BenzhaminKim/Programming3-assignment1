@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,7 +47,7 @@ namespace Problem2
         //Provide declaration for that delegate class.
         ////////////////////////////////////////////////////////////////
         //WRITE YOUR CODE BELOW
-
+        public delegate string MyFunc1(string a);
 
         ////////////////////////////////////////////////////////////////
         //A custom delegate class MyFunc2 has been used. 
@@ -55,6 +55,7 @@ namespace Problem2
         ////////////////////////////////////////////////////////////////
         //WRITE YOUR CODE BELOW
 
+        public delegate int MyFunc2(string a);
 
         //handler method for click on left button
         private void leftButton_onClick(object sender, RoutedEventArgs e)
@@ -66,7 +67,7 @@ namespace Problem2
             ///////////////////////////////////////////////////////////////////
             //WRITE YOUR CODE BELOW
 
-
+            aDel = new MyFunc1(c.getUpperCase);
 
             //The argument to be passed to the wrapped method is
             //saved in variable theWord.
@@ -81,10 +82,11 @@ namespace Problem2
             //WRITE YOUR CODE BELOW
 
 
-
+            sUpper = aDel(theWord);
 
             //Write the value in sUpper to textBlock
             //WRITE YOUR CODE BELOW
+            textblock1.Text = sUpper;
 
         }
 
@@ -98,6 +100,7 @@ namespace Problem2
             ////////////////////////////////////////////////////////////////
             //WRITE YOUR CODE BELOW
 
+            bDel = new MyFunc2(c.getLength);
 
             //The argument to be passed to the wrapped method is
             //saved in variable theWord.
@@ -110,11 +113,12 @@ namespace Problem2
             ///////////////////////////////////////////////////////////////
             //WRITE YOUR CODE BELOW
 
+            sLength = bDel(theWord);
 
 
             ///Write the value in sLength to textBlock
             //WRITE YOUR CODE BELOW
-
+            textblock1.Text = sLength.ToString();
         }
     }
 
