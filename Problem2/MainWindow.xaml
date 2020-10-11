@@ -18,26 +18,30 @@
         <Border Grid.Row="2" Grid.ColumnSpan="1" Background="White"></Border>
 
         <Grid Grid.Row="0">
-            <TextBlock Name="textblock1" 
+            <Viewbox x:Name="viewbox1">
+                <TextBlock Name="textblock1" 
                        Text="See output here..." 
                        TextWrapping="Wrap"
                        Foreground="White" 
                        FontSize="28" FontWeight="Bold" 
                        VerticalAlignment="Center" 
-                       Height="Auto" 
+                       Height="82" 
                        TextAlignment="Center"  />
+            </Viewbox>
         </Grid>
 
         <Grid Grid.Row="1">
-            <TextBox Name="textbox1" 
+            <Viewbox x:Name="viewbox2">
+                <TextBox Name="textbox1" 
                      Text="Enter input here..." 
                      HorizontalAlignment="Center"  
                      VerticalAlignment="Center" 
                      FontSize="28" 
-                     Height="Auto" 
-                     Width="Auto" 
+                     Height="94" 
+                     Width="341" 
                      TextAlignment="Center" 
                      Background="White" />
+            </Viewbox>
         </Grid>
 
         <Grid Grid.Row="2">
@@ -46,27 +50,31 @@
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Name="leftButton"  
+            <Viewbox Stretch="Uniform" Grid.Column="0">
+                <Button Name="leftButton"  
                     Content="Uppercase" 
                     Click="leftButton_onClick" 
                     FontSize="28"  
                     Grid.Column="0"
-                    HorizontalAlignment="Stretch" 
-                    
-                    VerticalAlignment="Stretch" 
-                    Height="Auto" 
-                    Width="Auto" />
-            
-            <Button Name="rightButton" 
+                    HorizontalAlignment="Center" 
+                    Margin="129,31,110.778,0" 
+                    VerticalAlignment="Top" 
+                    Height="71" 
+                    Width="158" />
+            </Viewbox>
+
+            <Viewbox Stretch="Uniform" Grid.Column="1">
+                <Button Name="rightButton" 
                     Content="Length"    
                     Click="rightButton_onClick" 
                     FontSize="28" 
                     Grid.Column="1" 
-                    HorizontalAlignment="Stretch" 
-                 
-                    VerticalAlignment="Stretch" 
-                    Height="Auto" 
-                    Width="Auto" />
+                    HorizontalAlignment="Center" 
+                    Margin="117.222,31,122.556,0" 
+                    VerticalAlignment="Top" 
+                    Height="71" 
+                    Width="158" />
+            </Viewbox>
 
         </Grid>
     </Grid>
