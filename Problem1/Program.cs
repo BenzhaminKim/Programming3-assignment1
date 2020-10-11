@@ -72,7 +72,7 @@ namespace Problem1
                         //Save the returned value from the call in variable sUpper.
                         //////////////////////////////////////////////////////////////
                         //WRITE YOUR CODE BELOW
-                        sUpper = aDel(s);
+                        sUpper = aDel.Invoke(theWord);
 
 
 
@@ -95,7 +95,7 @@ namespace Problem1
                         //Save the returned value from the call in variable sLength. 
                         //////////////////////////////////////////////////////////////
                         //WRITE YOUR CODE BELOW
-                        sLength = bDel(s);
+                        sLength = bDel(theWord);
 
 
 
