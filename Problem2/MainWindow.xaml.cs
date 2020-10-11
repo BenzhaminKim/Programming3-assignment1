@@ -82,7 +82,7 @@ namespace Problem2
             //WRITE YOUR CODE BELOW
 
 
-            sUpper = aDel(theWord);
+            sUpper = aDel.Invoke(theWord);
 
             //Write the value in sUpper to textBlock
             //WRITE YOUR CODE BELOW
